@@ -1,3 +1,6 @@
+window.addEventListener('DOMContentLoaded', function (event) {
+    document.getElementById("vvod").addEventListener("click", calc);
+});
 function calc() {
     let col, cen;
     col = document.getElementById('colich').value;
@@ -8,7 +11,7 @@ function calc() {
         alert("Error!!!");
     } else {
         var sum = cen * col;
-        document.getElementById('sum').innerHTML = "Итог: " + sum;
+        document.getElementById('sum').innerHTML = `Итог: ${sum} руб.`;
     }
 
 }
